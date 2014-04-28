@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android=
+    "http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+<TableLayout
+        android:id="@+id/activity_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-2613488639187412/6980628685"
+            ads:loadAdOnCreate="true"/>
+
+        <TableRow>
+            <TextView android:id="@+id/text1"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="Notional"/>
+
+            <EditText android:id="@+id/editText1"
+                android:layout_height="wrap_content"
+                android:layout_width="150sp"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/text2"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="Rate"/>
+
+            <EditText android:id="@+id/editText2"
+                android:layout_height="wrap_content"
+                android:layout_width="150sp"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+            <TextView android:id="@+id/percentage1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="%"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/text3"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="Spread"/>
+
+            <EditText android:id="@+id/editText3"
+                android:layout_height="wrap_content"
+                android:layout_width="150sp"
+                android:inputType="numberDecimal"
+                >
+            </EditText><TextView android:id="@+id/percentage2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="%"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/text4"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="Payment Frequency"/>
+
+            <EditText android:id="@+id/editText4"
+                android:layout_height="wrap_content"
+                android:layout_width="150sp"
+                android:inputType="number"
+                >
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/text5"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="Number of Years"/>
+
+            <EditText android:id="@+id/editText5"
+                android:layout_height="wrap_content"
+                android:layout_width="150sp"
+                android:inputType="number"
+                >
+            </EditText>
+        </TableRow>
+
+        <Button android:text="Calculate Payment"
+            android:id="@+id/button1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+        </Button>
+        <Button android:text="Schedule of Amortization"
+            android:id="@+id/button4"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+        </Button>
+        <Button android:text="Text File Output"
+            android:id="@+id/button5"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+        </Button>
+        <Button android:text="About"
+            android:id="@+id/button2"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+        </Button>
+        <Button android:text="Exit"
+              android:id="@+id/button3"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent">
+        </Button>
+
+</TableLayout>
+
+</ScrollView>

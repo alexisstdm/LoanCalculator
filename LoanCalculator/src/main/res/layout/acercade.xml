@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android=
+    "http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/acercade"
+        android:textSize="20sp"
+        android:text="This application calculates the periodic payment for a loan with a fixed rate and
+        a fixed spread.\n\n
+        Notional is the principal amount of borrowed money.\n\n
+        Rate. Is the fixed referenced interest in part of a hundred\n\n
+        Spread. Is the interest added in parts of a hundred to the total rate\n\n
+        Payment Frequency. Is the number of payments in a year.\n\n
+        Years. Then number of year for returning the principal amount.">
+    </TextView>
+</ScrollView>
